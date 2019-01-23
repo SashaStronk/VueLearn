@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson11</title>
+</head>
+<body>
+
+<div id="app">
+
+    <h2 v-if="type === 'a'">A</h2>
+    <h2 v-else-if="type === 'b'">B</h2>
+    <h2 v-else-if="type === 'c'">C</h2>
+    <h2 v-else>not match</h2>
+
+    <hr>
+
+    <input type="text" v-model="type">
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            type: ''
+        }
+    })
+</script>
+</body>
+</html>
